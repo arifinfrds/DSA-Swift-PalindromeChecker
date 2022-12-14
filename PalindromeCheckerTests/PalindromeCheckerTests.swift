@@ -51,4 +51,12 @@ final class PalindromeCheckerTests: XCTestCase {
         
         XCTAssertEqual(result, true)
     }
+    
+    func test_isPalindrome_shouldReturnFalseOnNonPalindromeString() {
+        let sut = Program()
+        
+        let result = sut.isPalindrome(text: "ab")
+        
+        XCTAssertEqual(result, false)
+    }
 }
