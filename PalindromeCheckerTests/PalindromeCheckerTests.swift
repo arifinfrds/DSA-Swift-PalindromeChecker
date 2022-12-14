@@ -26,11 +26,15 @@ import XCTest
 struct Program {
     func isPalindrome(text: String) -> Bool {
         
+        if text.isEmpty {
+            return false
+        }
+        
         if text.count == 1 {
             return true
         }
         
-        return false
+        return text == String(text.reversed())
     }
 }
 
@@ -58,5 +62,13 @@ final class PalindromeCheckerTests: XCTestCase {
         let result = sut.isPalindrome(text: "ab")
         
         XCTAssertEqual(result, false)
+    }
+    
+    func test_isPalindrome_shouldReturnTrueOnPalindromeString() {
+        let sut = Program()
+        
+        let result = sut.isPalindrome(text: "aba")
+        
+        XCTAssertEqual(result, true)
     }
 }
