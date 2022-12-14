@@ -34,7 +34,21 @@ struct Program {
             return true
         }
         
-        return text == String(text.reversed())
+        var leftPointerIndex = 0
+        var rightPointerIndex = text.count - 1
+        let chars = text.map { $0 }
+        
+        while leftPointerIndex < rightPointerIndex {
+            
+            if chars[leftPointerIndex] == chars[rightPointerIndex] {
+                leftPointerIndex += 1
+                rightPointerIndex -= 1
+            } else {
+                return false
+            }
+        }
+        
+        return true
     }
 }
 
