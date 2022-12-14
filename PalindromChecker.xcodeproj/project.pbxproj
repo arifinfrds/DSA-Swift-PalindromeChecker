@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9A53D8D22949EB7500A15EF4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A53D8D12949EB7500A15EF4 /* main.swift */; };
+		9A53D8DF2949EB9700A15EF4 /* PalindromeCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A53D8DE2949EB9700A15EF4 /* PalindromeCheckerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,19 @@
 /* Begin PBXFileReference section */
 		9A53D8CE2949EB7500A15EF4 /* PalindromChecker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PalindromChecker; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A53D8D12949EB7500A15EF4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9A53D8DC2949EB9700A15EF4 /* PalindromeCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalindromeCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A53D8DE2949EB9700A15EF4 /* PalindromeCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeCheckerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9A53D8CB2949EB7500A15EF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A53D8D92949EB9700A15EF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				9A53D8D02949EB7500A15EF4 /* PalindromChecker */,
+				9A53D8DD2949EB9700A15EF4 /* PalindromeCheckerTests */,
 				9A53D8CF2949EB7500A15EF4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				9A53D8CE2949EB7500A15EF4 /* PalindromChecker */,
+				9A53D8DC2949EB9700A15EF4 /* PalindromeCheckerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +72,14 @@
 				9A53D8D12949EB7500A15EF4 /* main.swift */,
 			);
 			path = PalindromChecker;
+			sourceTree = "<group>";
+		};
+		9A53D8DD2949EB9700A15EF4 /* PalindromeCheckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A53D8DE2949EB9700A15EF4 /* PalindromeCheckerTests.swift */,
+			);
+			path = PalindromeCheckerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +102,23 @@
 			productReference = 9A53D8CE2949EB7500A15EF4 /* PalindromChecker */;
 			productType = "com.apple.product-type.tool";
 		};
+		9A53D8DB2949EB9700A15EF4 /* PalindromeCheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A53D8E02949EB9700A15EF4 /* Build configuration list for PBXNativeTarget "PalindromeCheckerTests" */;
+			buildPhases = (
+				9A53D8D82949EB9700A15EF4 /* Sources */,
+				9A53D8D92949EB9700A15EF4 /* Frameworks */,
+				9A53D8DA2949EB9700A15EF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PalindromeCheckerTests;
+			productName = PalindromeCheckerTests;
+			productReference = 9A53D8DC2949EB9700A15EF4 /* PalindromeCheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +130,9 @@
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					9A53D8CD2949EB7500A15EF4 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					9A53D8DB2949EB9700A15EF4 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -111,9 +151,20 @@
 			projectRoot = "";
 			targets = (
 				9A53D8CD2949EB7500A15EF4 /* PalindromChecker */,
+				9A53D8DB2949EB9700A15EF4 /* PalindromeCheckerTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A53D8DA2949EB9700A15EF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A53D8CA2949EB7500A15EF4 /* Sources */ = {
@@ -121,6 +172,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A53D8D22949EB7500A15EF4 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A53D8D82949EB9700A15EF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A53D8DF2949EB9700A15EF4 /* PalindromeCheckerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +317,34 @@
 			};
 			name = Release;
 		};
+		9A53D8E12949EB9700A15EF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arifinfrds.com.PalindromeCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9A53D8E22949EB9700A15EF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arifinfrds.com.PalindromeCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -275,6 +362,15 @@
 			buildConfigurations = (
 				9A53D8D62949EB7500A15EF4 /* Debug */,
 				9A53D8D72949EB7500A15EF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A53D8E02949EB9700A15EF4 /* Build configuration list for PBXNativeTarget "PalindromeCheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A53D8E12949EB9700A15EF4 /* Debug */,
+				9A53D8E22949EB9700A15EF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
