@@ -30,10 +30,6 @@ struct Program {
             return false
         }
         
-        if text.count == 1 {
-            return true
-        }
-        
         var leftPointerIndex = 0
         var rightPointerIndex = text.count - 1
         let chars = text.map { $0 }
