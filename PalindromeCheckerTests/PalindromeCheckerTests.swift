@@ -25,6 +25,11 @@ import XCTest
 
 struct Program {
     func isPalindrome(text: String) -> Bool {
+        
+        if text.count == 1 {
+            return true
+        }
+        
         return false
     }
 }
@@ -37,5 +42,13 @@ final class PalindromeCheckerTests: XCTestCase {
         let result = sut.isPalindrome(text: "")
         
         XCTAssertEqual(result, false)
+    }
+    
+    func test_isPalindrome_shouldReturnTrueOnSingleString() {
+        let sut = Program()
+        
+        let result = sut.isPalindrome(text: "a")
+        
+        XCTAssertEqual(result, true)
     }
 }
